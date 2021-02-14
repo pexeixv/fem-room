@@ -13,18 +13,38 @@ body
     grid-template-areas: "nav nav nav nav main main main" "dark dark content content content light light"
 
     header
+        .fa-bars
+            display: none
+            // color: white
+            cursor: pointer
+            z-index: 3
         position: relative
         background: url(../img/desktop-image-hero-1.jpg) no-repeat center center/cover
         grid-area: nav
+        display: flex
+        align-items: flex-start
+        padding: 2em
+        div.logo
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 900
+            font-size: 1.2em
+            a
+                color: white
+
+        div.logo,nav
+            height: 40px
         nav
-            padding: 1.5em
-            width: 100%
+            // height: max-content
             display: flex
             align-items: center
             justify-content: flex-start
+            margin-left: 25px
             a
+                margin-left: 25px
+                margin-bottom: 0
                 font-size: 0.8em
-                margin: 1.3em 1em
                 color: white
                 font-weight: 700
                 &.links
@@ -33,13 +53,9 @@ body
                         transform: translateY(4px)
                         padding-bottom: 5px
                         border-bottom: 3px solid white
-                &.logo
-                    font-weight: 900
-                    font-size: 1.2em
     main
         grid-area: main
         padding: 2em 3em
-        
         display: flex
         flex-direction: column
         justify-content: flex-start

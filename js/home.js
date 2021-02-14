@@ -24,3 +24,10 @@ function change(con) {
     h1.innerHTML = titles[n];
     p.innerHTML = desc[n];
 }
+
+bars = document.querySelector('.fa-bars');
+nav = document.querySelector('nav');
+
+bars.addEventListener('click', () => {
+    nav.classList.toggle('show');
+})
