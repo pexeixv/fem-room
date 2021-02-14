@@ -18,6 +18,7 @@
             grid-area: nav
             position: relative
             nav
+                padding-left: 5em
                 display: none
                 position: absolute
                 justify-content: space-evenly
@@ -28,8 +29,10 @@
                 height: 100px
                 top: 0
                 left: 0
-                a
+                a.links
                     color: grey
+                    &:hover
+                        border-bottom: 3px solid grey
 
             .fa-bars
                 display: inline
@@ -60,4 +63,9 @@
             width: 80px
 
     .wrapper header nav.show
+        display: flex
+        i.fa-bars
+            color: gray
+
+    .hamburger
         display: flex

@@ -25,9 +25,30 @@ function change(con) {
     p.innerHTML = desc[n];
 }
 
-bars = document.querySelector('.fa-bars');
+ham = document.querySelector('.hamburger');
 nav = document.querySelector('nav');
+bars = document.querySelectorAll('.hamburger .bar');
+bar1 = document.querySelector('.hamburger .bar1');
+bar2 = document.querySelector('.hamburger .bar2');
+bar3 = document.querySelector('.hamburger .bar3');
 
-bars.addEventListener('click', () => {
-    nav.classList.toggle('show');
+
+ham.addEventListener('click', () => {
+    cond = nav.classList.toggle('show');
+    bars.forEach(bar => {
+        if (cond)
+            bar.style.background = 'gray';
+        else bar.style.background = 'white';
+    })
+    if (cond) {
+        // ham.style.transform = 'translateX(-10px)';
+        bar2.style.opacity = '0';
+        bar3.style.transform = 'rotate(-45deg) translate(10px,-5px)';
+        bar1.style.transform = 'rotate(45deg) translate(10px,5px)';
+
+    } else {
+        bar2.style.opacity = '1';
+        bar3.style.transform = 'none';
+        bar1.style.transform = 'none';
+    }
 })
