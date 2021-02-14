@@ -1,0 +1,40 @@
+*
+    outline: 1px solid red
+    opacity: 1 !important
+    visibility: visible !important
+    
+@media (max-width:1050px)
+    html
+        width: 100vw
+    body
+        width: 100%
+        height: unset
+        // overflow-x: hidden
+    .wrapper
+        width: 100vw
+        grid-template-columns: 1fr
+        grid-template-areas: "nav" "main" "dark" "content" "light"
+        grid-template-rows: 2fr 0.5fr 1fr 0.5fr 1fr
+        // grid-template-rows: 10fr 3fr 4fr 2fr 4fr
+        header
+            grid-area: nav
+        main
+            grid-area: main
+        .light
+            grid-area: light
+        .content
+            grid-area: content
+        .dark
+            grid-area: dark
+        .light,.dark
+            height: 300px
+            width: 100%
+        header,main,.content,.light,.dark
+            width: 100%
+
+    .controls
+        display: flex
+        position: absolute
+        bottom: 0
+        left: unset
+        right: 0
