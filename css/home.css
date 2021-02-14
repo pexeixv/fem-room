@@ -329,8 +329,8 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "nav" "main" "dark" "content" "light";
-    -ms-grid-rows: 500px 450px 300px 250px 300px;
-        grid-template-rows: 500px 450px 300px 250px 300px;
+    -ms-grid-rows: 500px 350px 300px 250px 300px;
+        grid-template-rows: 500px 350px 300px 250px 300px;
   }
   .wrapper header {
     display: -webkit-box;
