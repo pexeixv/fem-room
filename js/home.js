@@ -43,8 +43,8 @@ ham.addEventListener('click', () => {
     if (cond) {
         // ham.style.transform = 'translateX(-10px)';
         bar2.style.opacity = '0';
-        bar3.style.transform = 'rotate(-45deg) translate(10px,-5px)';
-        bar1.style.transform = 'rotate(45deg) translate(10px,5px)';
+        bar3.style.transform = 'rotate(-45deg) translate(10px,-4.5px)';
+        bar1.style.transform = 'rotate(45deg) translate(10px,4.5px)';
 
     } else {
         bar2.style.opacity = '1';

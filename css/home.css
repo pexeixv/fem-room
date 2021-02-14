@@ -294,7 +294,7 @@ body {
 
 .hamburger {
   display: none;
-  margin: 5px 30px;
+  margin: 5px 5px;
   width: 30px;
   height: 25px;
   -webkit-box-orient: vertical;
@@ -345,7 +345,7 @@ body {
     position: relative;
   }
   .wrapper header nav {
-    padding-left: 5em;
+    padding-left: 2em;
     display: none;
     position: absolute;
     -webkit-box-pack: space-evenly;
