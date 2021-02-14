@@ -261,12 +261,6 @@ body {
   font-size: 50px;
 }
 
-* {
-  outline: 1px solid red;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
 @media (max-width: 1050px) {
   html {
     width: 100vw;
@@ -280,8 +274,8 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "nav" "main" "dark" "content" "light";
-    -ms-grid-rows: 2fr 0.5fr 1fr 0.5fr 1fr;
-        grid-template-rows: 2fr 0.5fr 1fr 0.5fr 1fr;
+    -ms-grid-rows: 500px 450px 300px 250px 300px;
+        grid-template-rows: 500px 450px 300px 250px 300px;
   }
   .wrapper header {
     -ms-grid-row: 1;
@@ -309,7 +303,6 @@ body {
     grid-area: dark;
   }
   .wrapper .light, .wrapper .dark {
-    height: 300px;
     width: 100%;
   }
   .wrapper header, .wrapper main, .wrapper .content, .wrapper .light, .wrapper .dark {
