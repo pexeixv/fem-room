@@ -18,6 +18,7 @@ body
             color: white
             cursor: pointer
             z-index: 3
+        transition: background-image 2500ms ease-in-out
         position: relative
         background: url(../img/desktop-image-hero-1.jpg) no-repeat center center/cover
         grid-area: nav
@@ -60,6 +61,8 @@ body
         flex-direction: column
         justify-content: flex-start
         position: relative
+        h1,p,&>a
+            transition: all 500ms ease-out
         h1
             font-weight: bold
         p
@@ -75,7 +78,6 @@ body
             align-items: center
             text-transform: uppercase
             font-weight: 600
-            transition: all 150ms ease-in-out
             &:hover
                 color: gray
                 & > i
@@ -84,7 +86,7 @@ body
             i
                 margin-left: 15px
                 transform: translateY(-2px)
-                transition: all 500ms ease-in-out
+                transition: all 500ms ease-out
         & > span
             font-size: 0.8rem
             margin: 0.6em
@@ -107,6 +109,7 @@ body
         height: 100%
         grid-area: light
     .content
+        background: white
         grid-area: content
         display: flex
         flex-direction: column

@@ -11,6 +11,7 @@ var counter = 0;
 var header = document.querySelector('header');
 var h1 = document.querySelector('main h1');
 var p = document.querySelector('main p');
+var a = document.querySelector('main > a');
 
 function change(con) {
     if (con == 'next')
@@ -21,9 +22,32 @@ function change(con) {
     if (n < 0)
         n = -n;
     header.style.background = 'url(' + defaultPath + imagePaths[n] + ') no-repeat center center/cover';
-    h1.innerHTML = titles[n];
-    p.innerHTML = desc[n];
+
+    setTimeout(function () {
+        a.style.opacity = 0;
+    }, 300);
+    setTimeout(function () {
+        p.style.opacity = 0;
+    }, 600);
+    setTimeout(function () {
+        h1.style.opacity = 0;
+    }, 900);
+
+    setTimeout(function () {
+        h1.innerHTML = titles[n];
+        h1.style.opacity = 1;
+    }, 1500);
+    setTimeout(function () {
+        p.innerHTML = desc[n];
+        p.style.opacity = 1;
+    }, 1800);
+    setTimeout(function () {
+        a.style.opacity = 1;
+    }, 2100);
 }
+
+
+
 
 ham = document.querySelector('.hamburger');
 nav = document.querySelector('nav');
@@ -52,4 +76,6 @@ ham.addEventListener('click', () => {
         bar1.style.transform = 'none';
     }
 })
+
+
 

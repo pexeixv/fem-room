@@ -41,6 +41,8 @@ body {
 }
 
 .wrapper header {
+  -webkit-transition: background-image 2500ms ease-in-out;
+  transition: background-image 2500ms ease-in-out;
   position: relative;
   background: url(../img/desktop-image-hero-1.jpg) no-repeat center center/cover;
   -ms-grid-row: 1;
@@ -137,6 +139,11 @@ body {
   position: relative;
 }
 
+.wrapper main h1, .wrapper main p, .wrapper main > a {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
 .wrapper main h1 {
   font-weight: bold;
 }
@@ -162,8 +169,6 @@ body {
           align-items: center;
   text-transform: uppercase;
   font-weight: 600;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
 }
 
 .wrapper main > a:hover {
@@ -180,8 +185,8 @@ body {
   margin-left: 15px;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
 .wrapper main > span {
@@ -223,6 +228,7 @@ body {
 }
 
 .wrapper .content {
+  background: white;
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
