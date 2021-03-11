@@ -41,8 +41,8 @@ body {
 }
 
 .wrapper header {
-  -webkit-transition: background-image 2500ms ease-in-out;
-  transition: background-image 2500ms ease-in-out;
+  -webkit-transition: background-image 2000ms ease-in-out;
+  transition: background-image 2000ms ease-in-out;
   position: relative;
   background: url(../img/desktop-image-hero-1.jpg) no-repeat center center/cover;
   -ms-grid-row: 1;
